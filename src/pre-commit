@@ -28,7 +28,7 @@ done
 
 if [ "$FILES" != "" ]
 then
-    echo "Running Code Sniffer. Code standard PSR2."
+    echo "Running Code Sniffer. Code standard Yii2."
     ./vendor/bin/phpcs --ignore=./backend/*,./console/migrations/* --encoding=utf-8 -n -p $FILES
     if [ $? != 0 ]
     then
